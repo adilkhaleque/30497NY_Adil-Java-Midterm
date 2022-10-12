@@ -1,70 +1,106 @@
 ***ANSWER ALL OF THE QUESTIONS BELOW***
 
 Why do we need data structure?
-Answer:
+Answer: We need data structure for designing efficient algorithms and so that data is organized well, is reusable, and
+stored efficiently.
 
 What are the various operations that can be performed on different data structures?
-Answer:
+Answer: The various operations that can be performed on different data structures are Insertion, Deletion, Traversal,
+Searching, Sorting, Merging.
 
 When would we use data structures in the real world?
-Answer:
+Answer: Data structures can be used in many real world situations. A 2D array can be used for image processing, call
+logs or e-mails use stacks, a queue is used when waiting on a line for something, sorting algorithms are used in the
+contact list on a phone, graphs are used for scientific computations, etc.
 
 What is an Array?
-Answer:
+Answer: An array is a collection of items of the same data type stored at contiguous memory locations.
 
 What is the difference between Array and ArrayList?
-Answer:
+Answer: An array is a fixed length whereas an ArrayList has variable length. An array can contain both primitives and
+objects while an ArrayList can't store primitives.
 
 What is a LinkedList?
-Answer:
+Answer: A LinkedList is a sequence of nodes where each node contains a data field and a link to the next node on the
+list.
 
 How is an Array different from LinkedList?
-Answer:
+Answer: An array stores elements in contiguous memory locations where its size can't be altered while LinkedLists allow
+for a dynamic size that can change at runtime.
 
 What is a Queue?
-Answer:
+Answer: A Queue is an interface which holds elements processed in FIFO
+(First In First Out) order.
 
 What is a Stack (referring to data structures)?
-Answer:
+Answer: A linear data structure which follows the LIFO (Last In First Out) order.
 
 What is FIFO and LIFO?
-Answer:
+Answer: FIFO is First In First Out and LIFO is Last In First Out.
 
 Explain Big O Notation?
-Answer:
+Answer: Big O Notation is the measure of algorithmic efficiency, given a data set with size 'n'.
 
 What is the best case to search an element from an array?
-Answer:
+Answer: Best case to search an element from an array is O(1), where the searched item is present at the first element in
+the search array.
 
 What is the worst case to search an element from an array?
-Answer:
+Answer: The worst case is O(n), where the required element is at the end of the array/list or not present at all.
 
 Describe what a tree data structure is?
-Answer:
+Answer: A tree is a nonlinear hierarchical data structure with a set of connected nodes, connected by edges.
 
 Describe what a graph data structure is?
-Answer:
+Answer: A graph data structure is a nonlinear data structure consisting of vertices and edges. It's a pictorial
+representation of a set of objects.
 
 What is the difference between the HashTable and HashMap?
-Answer:
+Answer: The difference between the HashTable and HashMap is that
+HashMap allows one null key and multiple null values while HashTable doesn't allow any null key or value.
 
 How do HashMaps work in Java? How do they store values, and when are they useful?
-Answer:
+Answer: HashMap uses its static inner class Node<K,V> for storing map entries. This means that each entry in a HashMap
+is a node. It stores data in key-value pairs. They are useful when unique keys are available for the data we want to
+store.
 
 What is ArrayIndexOutOfBoundsException in java? When does it occur?
-Answer:
+Answer: ArrayIndexOutOfBoundsException in Java is a runtime exception that occurs when an array is accessed with an
+illegal index (either negative or greater than or equal to the size of the array).
 
 What are the different ways of copying an array into another array?
-Answer:
+Answer: The different ways of copying an array into another array are iterating each element of the original array
+and copying one element at a time (in a loop), using the clone() method, using arraycopy(), copyOf(), copyOfRange().
 
 What is DFS and BFS?
-Answer:
+Answer: DFS or Depth First Search uses Stack data structure and is a traversal method where traversal begins at the root
+node and proceeds through the nodes as far as possible until we reach a node that has no unvisited nodes nearby. BFS or
+Breadth First Search uses Queue data structure for finding the shortest path and is a traversal approach where we
+traverse through all nodes on the same level (adjacent nodes) first before moving on to the next level.
 
 What is Recursion?
-Answer:
+Answer: Recursion is a process where a method calls itself.
 
 What are linear and non-linear data Structures?
-Answer:
+Answer: Linear is where the arrangement is linear (connected to previous and next). It includes arrays, stacks, queues,
+linked lists, hash tables. Non-linear is where data isn't structured sequentially or linearly. Some non-linear data
+structures include trees and graphs.
 
 Outline different sorting algorithms and their time complexities:
 
+    1. Constant Time Algorithms - O(1), constant time, quickest
+    2. Logarithmic Time Algorithms - O(log n), logarithmic time, second quickest
+    3. Linear Time Algorithms - O(n), grows directly proportional to input size
+    4. N Log N Time Algorithms - O(n log n) - running time grows in proportion to n log n of the input
+    5. Polynomial Time Algorithms - O(n^p), the smaller the value of p, the faster the time
+    6. Exponential Time Algorithms - O(k^n), grow in proportion to some factor k exponentiated by input size n
+    7. Factorial Time Algorithms - O(n!), run time proportional to the factorial of the input size
+
+    Sorting Algorithms:
+    Selection Sort - Best, Average, Worst = O(n2)
+    Bubble Sort - Best = O(n), Average = O(n2), Worst = O(n2)
+    Insertion Sort - Best = O(n), Average = O(n2), Worst = O(n2)
+    Merge Sort - Best, Average, Worst = O(n log n)
+    Heap Sort - Best, Average, Worst = O(n log n)
+    Bucket Sort - Best = O(n + k), Average = O(n + k), Worst = O(n2)
+    Shell Sort - Best = O(n log n), Average = O(n log n), Worst <= O(n2)
