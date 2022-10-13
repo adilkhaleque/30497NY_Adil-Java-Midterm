@@ -15,7 +15,9 @@ public class UnitTestingStringProblem {
 //        System.out.println(DetermineLargestWord.findTheLargestWord("Human brain is a biological learning " +
 //                "machine"));
 
-        System.out.println(Palindrome.isPalindrome("DAD"));
+        //System.out.println(Palindrome.isPalindrome("DAD"));
+
+        System.out.println(Permutation.computePermutation("ABC"));
 
 
 
