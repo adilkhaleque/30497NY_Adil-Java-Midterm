@@ -1,5 +1,7 @@
 package string_problems;
 
+import java.util.Arrays;
+
 public class Anagram {
 
     /** INSTRUCTIONS
@@ -15,4 +17,26 @@ public class Anagram {
 
     // Implement Here
 
+    public static boolean isAnagram(String one, String two) {
+        one = one.toLowerCase();
+        two = two.toLowerCase();
+
+        if (one.length() == two.length()) {
+
+            char[] arrayOne = one.toCharArray();
+            char[] arrayTwo = two.toCharArray();
+
+            Arrays.sort(arrayOne);
+            Arrays.sort(arrayTwo);
+
+            if (Arrays.equals(arrayOne, arrayTwo)) {
+                System.out.println(one + " and " + two + " are anagrams!");
+                return true;
+            }
+        }
+
+        System.out.println(one + " and " + two + " are NOT anagrams!");
+        return false;
+
+    }
 }

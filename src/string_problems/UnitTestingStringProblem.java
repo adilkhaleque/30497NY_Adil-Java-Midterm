@@ -7,6 +7,10 @@ public class UnitTestingStringProblem {
      */
 
     public static void main(String[] args) {
+//        Anagram.isAnagram("CAT", "ACT");
+//        Anagram.isAnagram("ARMY", "MARY");
+//        Anagram.isAnagram("FART", "RAFT");
+//        Anagram.isAnagram("FART", "RATT");
 
     }
 }

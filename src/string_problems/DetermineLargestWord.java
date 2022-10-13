@@ -23,7 +23,12 @@ public class DetermineLargestWord {
         String st = "";
 
         // Implement here
-
+        String[] splitSentence = st.split(" ");
+        for (String s : splitSentence) {
+            if (s.length() >= st.length()) {
+                st = s;
+            }
+        }
         return map;
     }
 }
