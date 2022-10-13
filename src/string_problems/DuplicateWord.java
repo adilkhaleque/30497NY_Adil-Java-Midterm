@@ -21,10 +21,10 @@ public class DuplicateWord {
             for (int j = i + 1; j < length; j++) {
                 if (splitWords[i].equals(splitWords[j])) {
                     duplicates++;
-                    splitWords[j] = "0";
+                    splitWords[j] = "visited";
                 }
             }
-            if (duplicates > 1 && !splitWords[i].equals("0")) {
+            if (duplicates > 1 && !splitWords[i].equals("visited")) {
                 System.out.println(splitWords[i] + ", " + duplicates + " occurrences");
             }
         }
