@@ -12,5 +12,8 @@ public class UnitTestingStringProblem {
 //        Anagram.isAnagram("FART", "RAFT");
 //        Anagram.isAnagram("FART", "RATT");
 
+        System.out.println(DetermineLargestWord.findTheLargestWord("Human brain is a biological learning " +
+                "machine"));
+
     }
 }
