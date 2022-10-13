@@ -11,9 +11,23 @@ public class Palindrome {
      */
 
     public static void main(String[] args) {
-
+        System.out.println(isPalindrome("MOB"));
     }
 
     // Implement here
+    public static boolean isPalindrome(String s) {
 
+        s = s.toLowerCase();
+        char[] myCharArray = s.toCharArray();
+
+        for (int i = 0; i < myCharArray.length; i++) {
+            if (myCharArray[i] == myCharArray[myCharArray.length - 1 -i]) {
+                System.out.println("is a palindrome!");
+                return true;
+            }
+            System.out.println("is NOT a palindrome!");
+            return false;
+        }
+        return false;
+    }
 }
