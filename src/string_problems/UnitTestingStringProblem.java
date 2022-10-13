@@ -17,7 +17,7 @@ public class UnitTestingStringProblem {
 
         //System.out.println(Palindrome.isPalindrome("DAD"));
 
-        System.out.println(Permutation.computePermutation("ABC"));
+        //System.out.println(Permutation.computePermutation("ABC"));
 
 
 
