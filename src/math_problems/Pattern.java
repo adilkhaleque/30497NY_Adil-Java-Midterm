@@ -11,6 +11,24 @@ public class Pattern {
      */
 
     public static void main(String[] args) {
+        logicOfPattern();
+    }
 
+    public static void logicOfPattern() {
+
+        for (int i = 100; i >= 0; i--) {
+
+            if (i < 90 && i >= 70) {
+                i--;
+            }
+            if (i < 70 && i >= 40) {
+                i-=2;
+            }
+            if (i < 40) {
+                i-=3;
+            }
+            System.out.print(i + ",");
+        }
+        System.out.println("\b");
     }
 }
