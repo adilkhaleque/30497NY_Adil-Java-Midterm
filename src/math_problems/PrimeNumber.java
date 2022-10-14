@@ -11,7 +11,23 @@ public class PrimeNumber {
 
 
     public static void main(String[] args) {
-
+        printAllPrimeNumbers(2, 1000000);
     }
 
+    public static void printAllPrimeNumbers(int a, int b) {
+        int countOfPrimeNums;
+
+        for (int i = a; i <= b; i++) {
+            countOfPrimeNums = 0;
+
+            for (int j = a + 1; j <= i / 2; j++) {
+                if (i % j == 0) {
+                    countOfPrimeNums++;
+                    break;
+                }
+            }
+            if (countOfPrimeNums == 0)
+                System.out.println(i);
+        }
+    }
 }

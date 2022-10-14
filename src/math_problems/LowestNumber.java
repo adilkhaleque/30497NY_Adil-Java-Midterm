@@ -16,7 +16,7 @@ public class LowestNumber {
         System.out.println(findLowestNum(array));
     }
 
-    public static int findLowestNum (int[] arr) {
+    public static int findLowestNum(int[] arr) {
         Arrays.sort(arr);
         return arr[0];
     }
