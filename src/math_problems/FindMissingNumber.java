@@ -13,6 +13,7 @@ public class FindMissingNumber {
 
     public static int missingNum(int[] numArr) {
         int sum = ((numArr.length + 1) * (numArr.length + 2)) / 2;
+        //for (int i = 0; i < numArr.length; i++)
         for (int j : numArr) sum -= j;
         return sum;
     }
