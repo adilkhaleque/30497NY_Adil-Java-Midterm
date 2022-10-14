@@ -8,7 +8,9 @@ public class UnitTestingMath {
 
     public static void main(String[] args) {
 
-        System.out.println(Factorial.recursionFactorial(8));
-        System.out.println(Factorial.iterationFactorial(8));
+//        System.out.println(Factorial.recursionFactorial(8));
+//        System.out.println(Factorial.iterationFactorial(8));
+
+        Fibonacci.computeFibonacciSequence(40);
     }
 }
