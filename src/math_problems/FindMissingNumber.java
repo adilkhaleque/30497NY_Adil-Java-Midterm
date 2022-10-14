@@ -8,6 +8,12 @@ public class FindMissingNumber {
 
     public static void main(String[] args) {
         int[] array = new int[] {10, 2, 1, 4, 5, 3, 7, 8, 6};
+        System.out.println(missingNum(array));
+    }
 
+    public static int missingNum(int[] numArr) {
+        int sum = ((numArr.length + 1) * (numArr.length + 2)) / 2;
+        for (int j : numArr) sum -= j;
+        return sum;
     }
 }

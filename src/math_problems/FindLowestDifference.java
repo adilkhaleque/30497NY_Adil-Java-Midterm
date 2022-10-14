@@ -1,5 +1,9 @@
 package math_problems;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class FindLowestDifference {
 
     /** INSTRUCTIONS
@@ -13,8 +17,42 @@ public class FindLowestDifference {
         int[] array1 = {30, 12, 5, 9, 2, 20, 33, 1, -15};
         int[] array2 = {18, 25, 41, 47, 17, 36, 14, 19, -15};
 
+        lowestNumber(array1, array2);
     }
 
+    public static void lowestNumber(int[] array1, int[] array2) {
 
+        //Arrays.sort(array1);
+        //Arrays.sort(array2);
+//
+//        List<Integer> myList = new ArrayList<>();
+//
+//        for (int i = 0; i < array1.length; i++) {
+//            for (int j = 0; j < array2.length; j++) {
+//                if (array1[i] != array2[j]) {
+//                    if (array1[i] < array2[j]) {
+//                        myList.add(array1[i]);
+//                        break;
+//                    }
+//                }
+//            }
+//        }
+//        System.out.println(myList.get(0));
 
+//        int i = 0, j = 0;
+//        while (i < array1.length && j < array2.length) {
+//
+//            if (array1[i] < array2[j]) {
+//                i++;
+//                System.out.println(array1[i]);
+//            } else if (array2[j] < array1[i]) {
+//                j++;
+//                System.out.println(array2[j]);
+//            }
+//            else {
+//                i++;
+//                j++;
+//            }
+//        }
+    }
 }
