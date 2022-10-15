@@ -27,7 +27,7 @@ public class DataReader {
     public static void main(String[] args) {
         //String textFilePath = System.getProperty("user.dir") + "/src/data_structures/data/self-driving-car.txt";
         String textFilePath = System.getProperty("user.dir") + File.separator + "src" + File.separator +
-                "data_structures" + File.separator + "data" + File.separator + "self-driving-car.txt";
+                "data_structures" + File.separator + "data" + File.separator + "self-driving-car";
 
         File file = new File(textFilePath);
 
@@ -56,6 +56,18 @@ public class DataReader {
             while (myIterator2.hasNext()) {
                 System.out.println(myIterator2.next());
             }
+
+
+            myStack.pop();
+            myStack.push("PUSH!");
+
+//            for (String wordsStr : myStack) {
+//                System.out.println(wordsStr);
+//            }
+
+            System.out.println(myStack.peek());
+            System.out.println(myStack.search("economic"));
+
 
         } catch (FileNotFoundException e) {
             System.out.println("NO FILE EXISTS AT THE PROVIDED PATH!");
