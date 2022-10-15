@@ -20,7 +20,7 @@ public class Palindrome {
         s = s.toLowerCase();
         char[] myCharArray = s.toCharArray();
 
-        for (int i = 0; i < myCharArray.length; i++) {
+        for (int i = 0; i < myCharArray.length / 2; i++) {
             if (myCharArray[i] == myCharArray[myCharArray.length - 1 - i]) {
                 System.out.println("is a palindrome!");
                 return true;

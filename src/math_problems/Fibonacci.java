@@ -25,8 +25,9 @@ public class Fibonacci {
             n2 = n3;
             count += 1;
 
-            System.out.print(n1 + " ");
+            System.out.print(n1 + "," );
             //System.out.println(count);
         }
+        System.out.println("\b");
     }
 }
