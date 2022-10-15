@@ -35,6 +35,16 @@ public class UseMap {
         SharedStepsDatabase sql = new SharedStepsDatabase();
 
         // IMPLEMENT HERE
+        sql.insertMap(tableName, map);
 
+        String mapQuery = "SELECT * FROM test_hash_map";
+        List<List<String>> results = sql.executeQueryReadAll(mapQuery);
+
+        for (List<String> row : results) {
+            for (String cell : row) {
+                System.out.print(cell + "\t\t");
+            }
+            System.out.println();
+        }
     }
 }
