@@ -21,7 +21,7 @@ public class Palindrome {
         char[] myCharArray = s.toCharArray();
 
         for (int i = 0; i < myCharArray.length; i++) {
-            if (myCharArray[i] == myCharArray[myCharArray.length - 1 -i]) {
+            if (myCharArray[i] == myCharArray[myCharArray.length - 1 - i]) {
                 System.out.println("is a palindrome!");
                 return true;
             }
