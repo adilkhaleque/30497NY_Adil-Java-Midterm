@@ -13,6 +13,10 @@ public class UnitTestingMath {
 
         //Fibonacci.computeFibonacciSequence(40);
 
+//        int[] arr1 = new int [] {10, 20, 30, 40, 50, -66};
+//        int[] arr2 = new int [] {8, 20, 30, 40, 50, -66};
+//        FindLowestDifference.lowestNumber(arr1, arr2);
+
         //int[] myArray = new int[] {10, 2, 1, 4, 5, 3, 7, 9, 6};
         //System.out.println(FindMissingNumber.missingNum(myArray));
 

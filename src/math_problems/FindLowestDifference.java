@@ -2,6 +2,7 @@ package math_problems;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class FindLowestDifference {
@@ -22,11 +23,11 @@ public class FindLowestDifference {
 
     public static void lowestNumber(int[] array1, int[] array2) {
 
-        //Arrays.sort(array1);
-        //Arrays.sort(array2);
-//
-//        List<Integer> myList = new ArrayList<>();
-//
+//        Arrays.sort(array1);
+//        Arrays.sort(array2);
+
+        List<Integer> myList = new ArrayList<>();
+
 //        for (int i = 0; i < array1.length; i++) {
 //            for (int j = 0; j < array2.length; j++) {
 //                if (array1[i] != array2[j]) {
@@ -34,25 +35,27 @@ public class FindLowestDifference {
 //                        myList.add(array1[i]);
 //                        break;
 //                    }
+//                    else if (array2[j] < array1[i]) {
+//                        myList.add(array2[j]);
+//                        break;
+//                    }
 //                }
 //            }
 //        }
+//        //Collections.sort(myList);
 //        System.out.println(myList.get(0));
 
-//        int i = 0, j = 0;
-//        while (i < array1.length && j < array2.length) {
-//
-//            if (array1[i] < array2[j]) {
-//                i++;
-//                System.out.println(array1[i]);
-//            } else if (array2[j] < array1[i]) {
-//                j++;
-//                System.out.println(array2[j]);
-//            }
-//            else {
-//                i++;
-//                j++;
-//            }
-//        }
+        for (int i = 0; i < array1.length; i++) {
+            if (array1[i] != array2[i]) {
+                myList.add(array1[i]);
+            }
+        }
+        for (int j = 0; j < array2.length; j++) {
+            if (array1[j] != array2[j]) {
+                myList.add(array2[j]);
+            }
+        }
+        Collections.sort(myList);
+        System.out.println(myList.get(0));
     }
 }
