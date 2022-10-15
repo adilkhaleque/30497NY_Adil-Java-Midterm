@@ -3,6 +3,7 @@ package codelab.util;
 import codelab.Student;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -21,7 +22,9 @@ public class CsvReader {
 
     public static void main(String[] args) {
 
-        String csvFilePath = System.getProperty("user.dir") + "\\src\\codelab\\data\\roster.csv";
+        //String csvFilePath = System.getProperty("user.dir") + "\\src\\codelab\\data\\roster.csv";
+        String csvFilePath = System.getProperty("user.dir") + File.separator + "src" + File.separator + "codelab"
+        + File.separator + "data" + File.separator + "roster.csv";
         String row;
         String csvSplitBy = ",";
         BufferedReader br;
@@ -48,7 +51,19 @@ public class CsvReader {
         for (Student student : roster) {
             System.out.println(convertNumberOfProblemsSolved(student));
         }
+
+        // average score = # of exercises solved / number of students
+        int totalExercisesSolved = 0;
+        int numOfStudents = 0;
+
+        for (Student student : roster) {
+            totalExercisesSolved += student.getNumberOfExercisesSolved();
+            numOfStudents++;
+        }
+
+        System.out.println("\nAverage Score: " + totalExercisesSolved / numOfStudents);
     }
+
 
     private static String convertNumberOfProblemsSolved(Student student) {
         String name = student.getFirstName();
@@ -67,4 +82,5 @@ public class CsvReader {
             return "Very low effort. Not a good sign, " + name;
         }
     }
+
 }
