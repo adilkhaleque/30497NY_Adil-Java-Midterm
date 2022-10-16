@@ -17,17 +17,25 @@ public class Palindrome {
     // Implement here
     public static boolean isPalindrome(String s) {
 
+        StringBuilder reversedStr = new StringBuilder();
         s = s.toLowerCase();
         char[] myCharArray = s.toCharArray();
 
-        for (int i = 0; i < myCharArray.length / 2; i++) {
-            if (myCharArray[i] == myCharArray[myCharArray.length - 1 - i]) {
-                System.out.println("is a palindrome!");
-                return true;
-            }
-            System.out.println("is NOT a palindrome!");
-            return false;
+        for (int i = myCharArray.length - 1; i >= 0; i--) {
+            reversedStr.append(myCharArray[i]);
         }
-        return false;
+
+        return (reversedStr.toString()).equals(s);
     }
+
+//        for (int i = 0; i < myCharArray.length / 2; i++) {
+//            if (myCharArray[i] == myCharArray[myCharArray.length - 1 - i]) {
+//                System.out.println("is a palindrome!");
+//                return true;
+//            }
+//            System.out.println("is NOT a palindrome!");
+//            return false;
+//        }
+//        return false;
+//    }
 }
