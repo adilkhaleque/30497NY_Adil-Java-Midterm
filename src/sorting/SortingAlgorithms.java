@@ -43,6 +43,15 @@ public class SortingAlgorithms {
     public int[] insertionSort(int[] array) {
         final long startTime = System.currentTimeMillis();
         // IMPLEMENT HERE
+        for (int i = 1; i < array.length; i++) {
+            int temp = array[i];
+            int j = i - 1;
+            while (j >= 0 && array[j] > temp) {
+                array[j + 1] = array[j];
+                j = j - 1;
+            }
+            array[j + 1] = temp;
+        }
 
         final long endTime = System.currentTimeMillis();
         this.executionTime = endTime - startTime;
@@ -52,12 +61,22 @@ public class SortingAlgorithms {
 
     public int[] bubbleSort(int[] array) {
         // IMPLEMENT HERE
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length - i - 1; j++) {
+                if (array[j] > array[j + 1]) {
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }
+            }
+        }
 
         return array;
     }
 
     public int[] mergeSort(int[] array) {
         // IMPLEMENT HERE
+
 
         return array;
     }
